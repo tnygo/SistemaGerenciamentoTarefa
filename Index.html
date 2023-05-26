@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+  <title>Gerenciamento de Tarefas</title>
+</head>
+<body>
+  
+  <main>
+
+    <h1>Gerenciamento de Tarefas</h1>
+    <form class="form">
+      <input type="titulo" placeholder="Título" class="inp
+      -tarefa"> <br>
+      <input type="descricao" placeholder="Descrição" class="inp
+      -descricao"> 
+      <button type="submit">+</button>
+    </form>
+
+    <table>
+
+      <thead>
+
+        <tr>
+          <th>Título</th>
+          <th>Descrição</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td> tarefa1</td>
+          <td>coisas a fazer</td>
+          <td>
+            <select>
+              <option value="pendente">Pendente</option>
+              <option value="em andamento">Em Andamento</option>
+              <option value="concluida">Concluída</option>
+            </select>
+          </td>
+          <td>
+            <button class="button-edit">
+              <span class="material-symbols-outlined">edit</span>
+            </button>
+            <button class="button-delete">
+              <span class="material-symbols-outlined">delete</span>
+            </button></td>
+        </tr>
+      </tbody>
+      
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
